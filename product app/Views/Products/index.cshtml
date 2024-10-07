@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Product>
+
+<h2 class="my-4">Product List</h2>
+<a href="/Products/Create" class="btn btn-primary mb-3">
+    <i class="fas fa-plus"></i> Add Product
+</a>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price.ToString("C")</td>
+                <td>
+                    <a href="/Products/Edit/@product.Id" class="btn btn-warning">
+                        <i class="fas fa-edit"></i> Edit
+                    </a>
+                    <a href="/Products/Delete/@product.Id" class="btn btn-danger">
+                        <i class="fas fa-trash-alt"></i> Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
