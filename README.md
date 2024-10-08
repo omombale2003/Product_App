@@ -18,6 +18,9 @@ This is a simple web application for managing products built with ASP.NET Core a
 
 1. Clone the repository:
    ```bash https://github.com/omombale2003/Product_App.git
-2. Run the project   
-   
+2. Run the project
+
+
+![productlist](https://github.com/user-attachments/assets/7140adee-f991-43fe-ae96-f2766c042de8)
+
 
